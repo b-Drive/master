@@ -12,7 +12,8 @@ var w = now.getDay();
 var h = now.getHours();
 var mi = now.getMinutes();
 
-$('#MF_form_phrase02').val(y + '年' + m + '月' + d + '日' + h + ':' + mi);
+//$('#MF_form_phrase02').val(y + '年' + m + '月' + d + '日' + h + ':' + mi);
+$('#MF_form_phrase02').val('2015年6月27日18:00');
 
 });
 
@@ -21,16 +22,25 @@ function clickRECO(memId,recTime,recMode){
 
 	alert(memId+recTime+recMode);
 	
-	$.ajax({
-	   type: "POST",
-	   url: "some.php",
-	   data: {
-	     id: memId,
-         time: recTime,
-         mode:recMode
-	   },
-	   success: function(){
-	     alert( "登録完了しました");
-	   }
-	 });
+//	$.ajax({
+//	   type: "POST",
+//	   url: "some.php",
+//	   data: {
+//	     id: memId,
+  //       time: recTime,
+   //      mode:recMode
+	//   },
+//	   success: function(){
+//	     alert( "登録完了しました");
+//	   }
+//	 });
+
+$('#secret')[0].href='0332_06_.html';
+
+}
+
+
+function clickPREV(){
+
+
 }

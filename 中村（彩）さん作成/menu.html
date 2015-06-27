@@ -32,8 +32,8 @@
 			<li><input type="text" class="inputCMN" name="time" value="" id="MF_form_phrase02" autocomplete="off" class="cmn_search"></li>
 			<li>
 				<ul class="btnList">
-				<li><a href="#" onclick="clickRECO(document.getElementById('MF_form_phrase01').value,document.getElementById('MF_form_phrase02').value,'1');"><div class="btn">出勤</div></a></li>
-				<li><a href="#" onclick="clickRECO(document.getElementById('MF_form_phrase01').value,document.getElementById('MF_form_phrase02').value,'0');"><div class="btn">退勤</div></a></li>
+				<li><a href="javascript:void(0)" onclick="clickRECO(document.getElementById('MF_form_phrase01').value,document.getElementById('MF_form_phrase02').value,'1');"><div class="btn">出勤</div></a></li>
+				<li><a href="javascript:void(0)" onclick="clickRECO(document.getElementById('MF_form_phrase01').value,document.getElementById('MF_form_phrase02').value,'0');"><div class="btn">退勤</div></a></li>
 				</ul>
 			</li>
 			</ul>
@@ -43,6 +43,8 @@
 		<h2 class="entry-h2">閲覧</h2>
 		<form name="PREV_FORM" class="formCMN" action="test.html">
 		<ul>
+			<li>社員番号</li>
+			<li><input type="text" class="inputCMN" name="memberNo" value="" id="MF_form_phrase01" autocomplete="off" class="cmn_search"></li>
 			<li><select name="month" class="inputCMN" >
 				<option value="0">閲覧する月をお選びください↓</option>
 				<option value="1">1月</option>
@@ -60,7 +62,8 @@
 			</select>
 			<li>
 				<ul class="btnList">
-				<li><a href="#" onclick="document.PREV_FORM.submit();"><div class="btn">表示</div></a></li>
+				<li><a id="secret" href="0332_06.html"><div class="btn">表示</div></a></li>
+				<!--<li><a href="#" onclick="document.PREV_FORM.submit();"><div class="btn">表示</div></a></li>-->
 				</ul>
 			</li>
 
