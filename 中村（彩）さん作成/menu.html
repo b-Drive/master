@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイムレコさん</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/recosan.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+
+</head>
+<body>
+<div id="wrapper">
+	<header>
+	<img src="img/logo_header.png" alt="株式会社 ブライセン">
+	</header>
+	<div id="mainContents">
+		<h1>勤怠登録メニュー</h1>
+	<div id="menuReco" class="tblBorder">
+		<h2 class="entry-h2">登録</h2>
+		<form name="RECO_FORM" class="formCMN" action="">
+			<ul>
+			<li>社員番号</li>
+			<li><input type="text" class="inputCMN" name="memberNo" value="" id="MF_form_phrase01" autocomplete="off" class="cmn_search"></li>
+			<li>時間</li>
+			<li><input type="text" class="inputCMN" name="time" value="" id="MF_form_phrase02" autocomplete="off" class="cmn_search"></li>
+			<li>
+				<ul class="btnList">
+				<li><a href="#" onclick="clickRECO(document.getElementById('MF_form_phrase01').value,document.getElementById('MF_form_phrase02').value,'1');"><div class="btn">出勤</div></a></li>
+				<li><a href="#" onclick="clickRECO(document.getElementById('MF_form_phrase01').value,document.getElementById('MF_form_phrase02').value,'0');"><div class="btn">退勤</div></a></li>
+				</ul>
+			</li>
+			</ul>
+		</form>
+	</div><!--menuReco-->
+	<div id="menuPrev" class="tblBorder">
+		<h2 class="entry-h2">閲覧</h2>
+		<form name="PREV_FORM" class="formCMN" action="test.html">
+		<ul>
+			<li><select name="month" class="inputCMN" >
+				<option value="0">閲覧する月をお選びください↓</option>
+				<option value="1">1月</option>
+				<option value="2">2月</option>
+				<option value="3">3月</option>
+				<option value="4">4月</option>
+				<option value="5">5月</option>
+				<option value="6">6月</option>
+				<option value="7">7月</option>
+				<option value="8">8月</option>
+				<option value="9">9月</option>
+				<option value="10">10月</option>
+				<option value="11">11月</option>
+				<option value="12">12月</option>
+			</select>
+			<li>
+				<ul class="btnList">
+				<li><a href="#" onclick="document.PREV_FORM.submit();"><div class="btn">表示</div></a></li>
+				</ul>
+			</li>
+
+			</li>
+		</ul>
+	</div><!--menuPrev-->
+	</div><!--mainContents-->
+</div>
+
+
+</body>
+</html>

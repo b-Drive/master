@@ -1,0 +1,83 @@
+/* reset
+==================================== */
+html, body{
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+body{
+	font-family: ƒƒCƒŠƒI,Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro',Osaka,'‚l‚r ‚oƒSƒVƒbƒN';
+
+}
+
+html , body {height:100%;}
+body > #wrapper {height:auto;}
+/* header
+==================================== */
+header{
+  padding: 5px;
+  background: #fff;
+}
+
+
+img{
+  border:0;
+}
+
+/* maincontents
+==================================== */
+
+#wrapper{
+  width: 100%;
+  background: #7bbe35;
+  padding: 0;
+  opacity: 0.9;
+  min-height: 100%;
+}
+
+#mainContents{
+  width:88%;
+  margin:0 auto;
+}
+
+
+
+.entry-h2 {
+  padding: 15px 16px;
+  background: linear-gradient(-45deg,#e0e0e0 25%,transparent 25%,transparent 50%,#e0e0e0 50%,#e0e0e0 75%,transparent 75%,transparent);
+  background: -webkit-linear-gradient(-45deg,#e0e0e0 25%,transparent 25%,transparent 50%,#e0e0e0 50%,#e0e0e0 75%,transparent 75%,transparent);
+  background-size: 3px 3px;
+  color: #212121;
+  font-size: 26px;
+}
+
+.formCMN, .inputCMN{
+  font-size: 100%;
+}
+
+.tblBorder{
+  border: 4px solid #fff;
+  margin: 10px 0;
+}
+li{
+  list-style: none;
+}
+.btnList{
+  padding: 0;
+  margin: 10px 0;
+}
+.btnList li{
+  display: inline-block;
+}
+.btn {
+   background: #EEE;
+   border: 3px solid #DDD;
+   color: #111;
+   width: 100px;
+   padding: 10px 0;
+   text-align: center;
+}
