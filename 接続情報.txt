@@ -1,0 +1,4 @@
+サーバ名：bdrivetest.ckkvxm1mmuxy.ap-northeast-1.rds.amazonaws.com,1433
+認証：SQLServer認証
+ログイン：buser
+パスワード：busertest
